@@ -1,0 +1,16 @@
+button {
+    display: block;
+    margin-bottom: 1em;
+  }
+  
+  .album>span:after {
+    content: ' (an album)';
+  }
+  
+  .active {
+    font-weight: bold;
+  }
+  
+  .active>span:after {
+    content: ' ACTIVE';
+  }

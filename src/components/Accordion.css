@@ -3,7 +3,7 @@
     flex-direction: column;
 }
 .accordion{
-    background-color: rgba(196, 54, 54, 0.938);
+    background-color: rgba(0, 0, 0, 0.938);
     color:rgba(241, 232, 106, 0.856);
     cursor: pointer;
     padding: 18px;
@@ -16,7 +16,7 @@
 
 .accordion:hover,
 .active{
-    background-color: rgb(206, 119, 184);
+    background-color: rgb(21, 148, 180);
 }
 .accordion_title{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;

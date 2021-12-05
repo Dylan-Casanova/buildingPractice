@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Accordion from "./components/Accordion";
+import Practice from "./components/Practice";
 
 function App() {
   return (
@@ -32,6 +33,8 @@ function App() {
         not only five centuries, but also the leap into </p> <br>
          " 
       />
+      
+      <Practice />
     </div>
   );
 }
