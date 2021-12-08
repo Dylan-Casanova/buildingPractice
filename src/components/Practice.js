@@ -16,32 +16,43 @@ class Practice extends React.Component {
     </div>
   }
 }
-// practice from hacker rank.
-function diagonalDifference(arr) {
-  // Initialize sums of diagonals
-      var n = arr.length;
-      var d1 = 0;
-      var d2 = 0;
-   
-      for (var i = 0; i<n; i++)
-      {
-          for (var j = 0; j<n; j++)
-          {
-              // finding sum of primary diagonal
-              if (i === j)
-                  d1 += arr[i][j];
-   
-              // finding sum of secondary diagonal
-              if (i + j === n - 1)
-                  d2 += arr[i][j];
-          }
-      }
-   
-      // Absolute difference of the sums
-      // across the diagonals
-      return Math.abs(d1 - d2);
-  }
+// Code for hackerearth practice test.
+process.stdin.resume();
+process.stdin.setEncoding("utf-8");
+var stdin_input = "";
 
+process.stdin.on("data", function (input) {
+stdin_input += input; // Reading input from STDIN
+});
+
+process.stdin.on("end", function () {
+main(stdin_input);
+});
+
+function main(input) {
+if (input.length === 0) return 0;
+var data = input.split('\n');
+var firstNumber = data[0]
+var secondNumber = (data[1].split(" "));
+let closest = secondNumber[0];
+for(let i = 0; i < secondNumber.length;i++){
+let number = secondNumber[i];
+let absNumber = Math.abs(number);
+let absClosest = Math.abs(closest);
+
+if (absNumber < absClosest)
+{
+closest = number;
+}
+else if (absNumber === absClosest && closest < 0)
+{
+closest = number;
+}
+}
+str = closest.toString();
+
+process.stdout.write(closest); // Writing output to STDOUT
+}
 
 
 
